@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap%27');
+
+body{
+    background-color: whitesmoke;
+}
+
+img{
+    width: 200px;
+}
+
+#divLogo{
+    margin: auto;
+    width: 200px;
+}
+
+#sectionTable{
+    border-radius: 8px;
+    padding: 5px;
+    margin: auto;
+    background-color: black;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.301);
+}
+
+.botao-entrar{
+    color: black;
+    background-color: rgb(255, 255, 0);
+    border-radius: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    font-size: 10px;
+    text-transform: uppercase;
+}
