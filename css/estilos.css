@@ -1,43 +1,43 @@
-body,
-ul,
-li,
-p {
+* {
   margin: 0px;
   padding: 0px;
   list-style: none;
   font-size: 1.2rem;
-  font-family: Arial;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-    margin-bottom: 100px;
+    background-color: #181820;
 }
   
+  
+header {
+    background: yellow;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    min-height: 380px;
+    /*padding: 7px;*/
+}
+  
+header > h1{
+    display: block;
+    margin: auto;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
-  
-h1 {
-    text-align: center;
-    margin-top: 100px;
-}
-  
-.header {
-    background: yellow;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px;
-  }
-  
+
 .imgLogo1{
     height: 150px;
 }
 
 .menu {
     display: flex;
+    padding-top: 10px;
+    max-width: fit-content;
 }
   
 .menu li {
@@ -47,27 +47,38 @@ h1 {
 .menu li a {
     display: block;
     padding: 5px;
+    border-radius: 3px;
 }
 
-button{
-    border: none;
-    width: 5rem;
-    padding: 10px;
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
-    color: yellow;
-    font-size: 20px;
-    font-weight: 300;
-    border-radius: 7px;
+.menu li .options{
+    margin-top: 68px;
+    
 }
 
+.menu li .options:hover {
+    background-color: #E8E800;
+}
 
-.divPrimeira{
+header > .divConteudo{
+    padding-top: 40px;
+    /*background-color: #E8E800;*/
     margin: auto;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: yellow;
-    height: 400px;
-    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 300px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #181820;
+    color: white;
+
+}
+
