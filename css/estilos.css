@@ -12,12 +12,101 @@ body {
   
   
 header {
-    background: yellow;
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-between;*/
+    background: yellow;    
     min-height: 380px;
-    /*padding: 7px;*/
+}
+  
+header > h1{
+    display: block;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imgLogo1{
+    height: 150px;
+}
+  
+.menu li {
+    margin-left: 10px;
+}
+  
+.menu li a {
+    display: block;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-right: 30px;
+}
+
+.menu li .options{
+    margin-top: 68px;
+}
+
+.menu li .options:hover {
+    background-color: #E8E800;
+}
+
+header > .divConteudo{
+    padding-top: 40px;
+    /*background-color: #E8E800;*/
+    margin: auto;
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 300px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1150px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #181820;
+    color: white;
+}
+
+main p {
+    text-align: justify;
+}
+
+main .imgLearning{
+    width: 400px;
+    padding: 10px;
+}
+
+main .divImgTexto{
+    background-color: tomato;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+main .divImgTexto p{
+    max-width: 580px;
+    
+}
+
+/*
+
+header {
+    background: yellow; --- 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 380px; ---
+    padding: 7px;  
 }
   
 header > h1{
@@ -61,7 +150,7 @@ a {
 
 header > .divConteudo{
     padding-top: 40px;
-    /*background-color: #E8E800;*/
+    background-color: #E8E800;
     margin: auto;
     max-width: 600px;
     min-width: 300px;
@@ -81,4 +170,6 @@ main {
     color: white;
 
 }
+
+*/
 
