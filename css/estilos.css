@@ -74,102 +74,35 @@ main {
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #181820;
-    color: white;
+    color: white;   
+    background-color: #1e1e2c;
+
 }
 
 main p {
     text-align: justify;
 }
 
-main .imgLearning{
+main .sectionImgTexto {
+    /*background-color: tomato;*/
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+
+main .sectionImgTexto .teste {
+    background-color: green;
+}
+
+main .sectionImgTexto div:nth-child(1) .imgLearning{
     width: 400px;
-    padding: 10px;
 }
 
-main .divImgTexto{
-    background-color: tomato;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-main .divImgTexto p{
-    max-width: 580px;
-    
-}
-
-/*
-
-header {
-    background: yellow; --- 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-height: 380px; ---
-    padding: 7px;  
-}
-  
-header > h1{
-    display: block;
-    margin: auto;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.imgLogo1{
-    height: 150px;
-}
-
-.menu {
-    display: flex;
-    padding-top: 10px;
-    max-width: fit-content;
-}
-  
-.menu li {
-    margin-left: 10px;
-}
-  
-.menu li a {
-    display: block;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-.menu li .options{
-    margin-top: 68px;
-    
-}
-
-.menu li .options:hover {
-    background-color: #E8E800;
-}
-
-header > .divConteudo{
-    padding-top: 40px;
-    background-color: #E8E800;
-    margin: auto;
-    max-width: 600px;
-    min-width: 300px;
-    min-height: 300px;
-    text-align: justify;
+main .sectionImgTexto div:nth-child(2){
+    max-width: 740px;
     padding-left: 10px;
-    padding-right: 10px;
 }
 
-main {
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #181820;
-    color: white;
 
-}
 
-*/
 
