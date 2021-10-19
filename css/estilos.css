@@ -14,11 +14,7 @@ body {
 header {
     background: yellow;    
     min-height: 380px;
-}
-  
-header > h1{
-    display: block;
-    margin: auto;
+    
 }
 
 a {
@@ -61,15 +57,29 @@ a {
 }
 
 header > .divConteudo{
-    padding-top: 40px;
-    /*background-color: #E8E800;*/
-    margin: auto;
+    /*padding-top: 40px;
+    background-color: #E8E800;
+    margin:auto;
     max-width: 600px;
     min-width: 300px;
     min-height: 300px;
     text-align: justify;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px;*/
+    display: block;
+    margin: auto;
+    min-width: 300px;
+    text-align: justify;
+    max-width: 550px;
+    margin-left: 125px;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: black;
+}
+
+header .divConteudo h1{
+    font-size: 2.0rem;
+    text-shadow: #00000056 2px 3px ;
 }
 
 main {
