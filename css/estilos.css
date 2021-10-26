@@ -13,8 +13,7 @@ body {
   
 header {
     background: yellow;    
-    min-height: 380px;
-    
+    height: 65vh;
 }
 
 a {
@@ -56,9 +55,9 @@ a {
     
 }
 
-header > .divConteudo{
+header > .sectionConteudoHeader{
     /*padding-top: 40px;
-    background-color: #E8E800;
+    background-color: #E8E800;      
     margin:auto;
     max-width: 600px;
     min-width: 300px;
@@ -66,20 +65,30 @@ header > .divConteudo{
     text-align: justify;
     padding-left: 10px;
     padding-right: 10px;*/
-    display: block;
+    display: flex;
     margin: auto;
     min-width: 300px;
     text-align: justify;
-    max-width: 550px;
+    max-width: 750px;
     margin-left: 125px;
     margin-bottom: 30px;
     padding: 20px;
     color: black;
 }
 
-header .divConteudo h1{
+
+
+header .sectionConteudoHeader .container {
+    width: 50%;
+}
+
+header .sectionConteudoHearder .container h1{
     font-size: 2.0rem;
     text-shadow: #00000056 2px 3px ;
+}
+
+header .sectionConteudoHeader .imgLampadaCerebro {
+    height: 250px;
 }
 
 main {
