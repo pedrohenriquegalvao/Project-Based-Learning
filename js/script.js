@@ -25,13 +25,13 @@ function montarCardProdutos(){
 
         if(listaCursos[i][3] == false)
         {
-            conteudo += '<div class="div-card-comprar" onclick="acessar('+listaCursos[i][0]+')" >';
+            conteudo += '<div class="div-card-acessar" onclick="acessar('+listaCursos[i][0]+')" >';
             conteudo += 'Acessar';
             conteudo += '</div>';
         }
         else
         {
-            conteudo += '<div class="div-card-comprar curso-acessado" >';
+            conteudo += '<div class="div-card-acessar curso-acessado" >';
             conteudo += 'Acessado';
             conteudo += '</div>';
         }
