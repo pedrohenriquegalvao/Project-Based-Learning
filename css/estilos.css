@@ -50,9 +50,6 @@ a {
 
 .menu li .options:hover {
     background-color: #E8E800;
-    
-    
-    
 }
 
 header > .sectionConteudoHeader{
@@ -66,25 +63,23 @@ header > .sectionConteudoHeader{
     padding-left: 10px;
     padding-right: 10px;*/
     display: flex;
-    margin: auto;
+    margin-left: 380px;
     min-width: 300px;
     text-align: justify;
     max-width: 750px;
-    margin-left: 125px;
     margin-bottom: 30px;
     padding: 20px;
     color: black;
 }
 
 
-
 header .sectionConteudoHeader .container {
     width: 50%;
 }
 
-header .sectionConteudoHearder .container h1{
+header .sectionConteudoHeader .container h1{
     font-size: 2.0rem;
-    text-shadow: #00000056 2px 3px ;
+    text-shadow: #00000056 2px 3px;
 }
 
 header .sectionConteudoHeader .imgLampadaCerebro {
