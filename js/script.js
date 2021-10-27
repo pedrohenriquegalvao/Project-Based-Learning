@@ -1,4 +1,5 @@
-var listaCursos = [[0,'Nome do curso1', 'learning.png', false], [1, 'Nome do curso2', 'learning.png', false]];
+var listaCursos = [[0,'ASSINATURA MENSAL', 'learning.png', false], [1, 'ASSINATURA TRIMESTRAL', 'learning.png', false],
+ [2, 'ASSINATURA SEMESTRAL', 'learning.png', false], [3, 'ASSINATURA ANUAL', 'learning.png', false]];
 
 var cursosAcessados = []
 
@@ -16,8 +17,9 @@ function montarCardProdutos(){
     {
         var conteudo = "";
         conteudo += '<div class="div-card">';
-        conteudo += '<div class="div-card-img">';
-        conteudo += '<img src="img/'+listaCursos[i][2]+'" />';
+        /*conteudo += '<div class="div-card-img">';*/
+        /*conteudo += '<img src="img/'+listaCursos[i][2]+'" />';*/
+        conteudo += '<div class="div-yellow-line">';
         conteudo += '</div>';
         conteudo += '<div class="div-card-descricao">';
         conteudo += listaCursos[i][1];

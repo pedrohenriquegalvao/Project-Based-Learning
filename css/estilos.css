@@ -1,22 +1,62 @@
 body{
     margin: 0px;
+    background-color: #181820;
 }
 
 header {
     background: yellow;    
-    min-height: 100px;
+    height: 16vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imgLogo1{
+    height: 150px;
+}
+  
+.menu li {
+    margin-left: 10px;
+}
+  
+.menu li a {
+    display: block;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-right: 30px;
+}
+
+.menu li .options{
+    margin-top: 68px;
+}
+
+.menu li .options:hover {
+    background-color: #E8E800;
+    
+    
+    
 }
 
 #divPagina{
     width: 100%;
     height: 100%;
-    background-color: lightcyan;
+    background-color: #181820;
 }
 
 .div-card{
     width: 200px;
     height: 250px;
-    background-color: burlywood;
+    background-color: white;
     margin: 5px;
     border-radius: 10px;
     float: left;
@@ -27,6 +67,14 @@ header {
     height: 180px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+}
+
+.div-yellow-line{
+    width: 100%;
+    height: 4%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .div-card-descricao{
@@ -41,22 +89,23 @@ header {
 .div-card-acessar{
     text-align: center;
     font-weight: bold;
-    background-color: darkslateblue;
-    color: white;
+    background-color: yellow;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     height: 30px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    width: 80%;
+    border-radius: 10px;
     padding-top: 5px;
+    display: auto;
     cursor: pointer;
 }
 
 .div-card-acessar:hover{
-    background-color: dodgerblue;
+    background-color: rgb(148, 144, 22);
     color: black;
 }
 
 .curso-acessado{
-    background-color: lightseagreen;
+    background-color: rgb(208, 205, 193);
     color: black;
 }
