@@ -1,5 +1,5 @@
-var listaCursos = [[0,'ASSINATURA MENSAL', 'learning.png', false], [1, 'ASSINATURA TRIMESTRAL', 'learning.png', false],
- [2, 'ASSINATURA SEMESTRAL', 'learning.png', false], [3, 'ASSINATURA ANUAL', 'learning.png', false]];
+var listaCursos = [[0,'correct.png','mensal.png', false], [1,'correct.png', 'trimestral.png', false],
+ [2,'correct.png', 'semestral.png', false], [3,'correct.png', 'anual.png', false]];
 
 var cursosAcessados = []
 
@@ -11,24 +11,26 @@ window.onload = function(){
 
 function montarCardProdutos(){
 
-    document.getElementById("divPagina").innerHTML = "";
+    document.getElementById("div-pagina").innerHTML = "";
 
     for(var i = 0; i < listaCursos.length; i++)
     {
         var conteudo = "";
         conteudo += '<div class="div-card">';
-        /*conteudo += '<div class="div-card-img">';*/
-        /*conteudo += '<img src="img/'+listaCursos[i][2]+'" />';*/
+        conteudo += '<div class="div-card-img">';
+        conteudo += '<img src="img/'+listaCursos[i][2]+'" />';
         conteudo += '<div class="div-yellow-line">';
         conteudo += '</div>';
-        conteudo += '<div class="div-card-descricao">';
-        conteudo += listaCursos[i][1];
+        conteudo += '<div class="div-card-img-label">';
+        conteudo += '<img src="img/'+listaCursos[i][1]+'" />';
+        conteudo += '<label>Acesso a todos os cursos.</label>'
         conteudo += '</div>';
+
 
         if(listaCursos[i][3] == false)
         {
             conteudo += '<div class="div-card-acessar" onclick="acessar('+listaCursos[i][0]+')" >';
-            conteudo += 'Acessar';
+            conteudo += 'Matricule-se';
             conteudo += '</div>';
         }
         else
@@ -40,7 +42,7 @@ function montarCardProdutos(){
 
         conteudo += '</div>';
 
-        document.getElementById("divPagina").innerHTML += conteudo;
+        document.getElementById("div-pagina").innerHTML += conteudo;
     }
 
 }

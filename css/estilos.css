@@ -1,6 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
 body{
     margin: 0px;
     background-color: #181820;
+    
 }
 
 header {
@@ -47,31 +56,63 @@ a {
     
 }
 
-#divPagina{
-    width: 100%;
-    height: 100%;
+#div-pagina{
     background-color: #181820;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);*/
 }
 
 .div-card{
-    width: 200px;
-    height: 250px;
+    
+    width: 250px;
+    height: 350px;
     background-color: white;
-    margin: 5px;
+    margin: 10px;
+    margin-top: 220px;
     border-radius: 10px;
-    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .div-card-img img{
-    width: 100%;
-    height: 180px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-card-img-label img{
+    height: 20px;
+    float: left; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.div-card-img-label2 img{
+    height: 20px;
+    float: left; 
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .div-yellow-line{
     width: 100%;
-    height: 4%;
+    height: 10%;
     background-color: yellow;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -83,21 +124,30 @@ a {
     text-align: center;
     padding-top: 10px;
     height: 30px;
+}
 
+label{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .div-card-acessar{
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
     background-color: yellow;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     height: 30px;
-    width: 80%;
     border-radius: 10px;
-    padding-top: 5px;
-    display: auto;
+    padding-top: 8px;
     cursor: pointer;
+    margin-top: 50%;
+    box-shadow: 8px 5px 25px rgba(50, 50, 50, 0.30);
+    
 }
 
 .div-card-acessar:hover{
@@ -108,4 +158,34 @@ a {
 .curso-acessado{
     background-color: rgb(208, 205, 193);
     color: black;
+}
+
+p{
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.p-text-principal{
+    color: white;
+    font-size: 36px;
+    display: absolute;
+    left: 50%;
+    margin-top: 190px;
+}
+
+.p-text-secundario{
+    color: white;
+    font-size: 24px;
+    display: absolute;
+    left: 50%;
+    margin-top: 260px;
+}
+
+.div-mensagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
 }
