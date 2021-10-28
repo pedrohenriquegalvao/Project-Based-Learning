@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient(45deg, yellow, DimGrey);    
+    background-repeat: no-repeat;    
+    min-height: 100vh;    
+    min-width: 100vw;    
+    display: flex;    
+    align-items: center;    
+    justify-content: center;
+}
+div{
+    background: white;
+    width: 370px;
+    max-width: 350px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+img{
+    height: 40px;
+    width: 40px;
+    align-content: center;
+}
+button{
+    margin-right: 3px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
