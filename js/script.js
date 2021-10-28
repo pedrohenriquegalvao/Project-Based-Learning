@@ -6,6 +6,14 @@ var cursosAcessados = []
 window.onload = function(){
 
     montarCardProdutos();
+    if(JSON.parse(window.localStorage.getItem('cursosAcessados')) != undefined)
+    {
+        cursosAcessados = JSON.parse(window.localStorage.getItem('cursosAcessados'));
+    }
+    else
+    {
+        cursosAcessados = [];
+    }
 
 }
 
