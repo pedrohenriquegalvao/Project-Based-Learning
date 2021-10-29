@@ -1,5 +1,11 @@
 var listaCursos = [[0,'Nome do curso','imagemTeste.png','Descrição do curso', false], [1,'Nome do curso','imagemTeste.png','Descrição do curso', false],
- [2,'Nome do curso','imagemTeste.png','Descrição do curso', false], [3,'Nome do curso','imagemTeste.png','Descrição do curso', false]];
+ [2,'Nome do curso','imagemTeste.png','Descrição do curso', false], [3,'Nome do curso','imagemTeste.png','Descrição do curso', false],
+ [4,'Nome do curso','imagemTeste.png','Descrição do curso', false], [5,'Nome do curso','imagemTeste.png','Descrição do curso', false],
+ [6,'Nome do curso','imagemTeste.png','Descrição do curso', false], [7,'Nome do curso','imagemTeste.png','Descrição do curso', false],
+ [8,'Nome do curso','imagemTeste.png','Descrição do curso', false], [9,'Nome do curso','imagemTeste.png','Descrição do curso', false],
+ [10,'Nome do curso','imagemTeste.png','Descrição do curso', false], [11,'Nome do curso','imagemTeste.png','Descrição do curso', false],
+ [12,'Nome do curso','imagemTeste.png','Descrição do curso', false], [13,'Nome do curso','imagemTeste.png','Descrição do curso', false],
+ [14,'Nome do curso','imagemTeste.png','Descrição do curso', false]];
 
 var cursosAcessados = []
 
@@ -38,7 +44,7 @@ function montarCardProdutos(){
         conteudo += '</div>';
 
 
-        if(listaCursos[i][3] == false)
+        if(listaCursos[i][4] == false)
         {
             conteudo += '<div class="div-card-acessar" onclick="acessar('+listaCursos[i][0]+')" >';
             conteudo += 'Iniciar curso';
@@ -60,7 +66,7 @@ function montarCardProdutos(){
 
 function acessar(id){
 
-    listaCursos[id][3] = true;
+    listaCursos[id][4] = true;
 
     cursosAcessados.push(listaCursos[id]);
 

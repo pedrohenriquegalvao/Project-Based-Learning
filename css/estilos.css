@@ -14,7 +14,8 @@ body{
 
 header {
     background: yellow;    
-    height: 16vh;
+    /*height: 16vh;*/
+    height: fit-content;
 }
 
 a {
@@ -37,6 +38,35 @@ a {
 .menu li {
     margin-left: 10px;
 }
+
+.divSearch {
+    display: flex;
+ }
+ 
+ .menu li .divSearch .inputSearch{
+    display: block;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-top: 68px;
+    background: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 63px;
+    outline: none;
+}
+
+.menu li .divSearch .inputSearch:focus{
+    background-color: #ffff48;
+}
+
+.divSearch i{
+    opacity: 70%;
+    position: relative;
+    top: 68px;
+    margin-right: 20px;
+    transform: translateX(-120%);
+}
   
 .menu li a {
     display: block;
@@ -52,6 +82,28 @@ a {
 .menu li .options:hover {
     background-color: #E8E800;
        
+}
+
+.menu li button{
+    background: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 63px;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}
+
+.menu li .options:hover {
+    background-color: #E8E800;
+}
+
+.menu li button:hover{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffff07;
+    transform: translateX(-10%) translateY(-10%);
+    transition: 0.5s;
 }
 
 .div-mensagem{
@@ -75,24 +127,28 @@ a {
 
 #div-pagina{
     background-color: #181820;
-    display: flex;
+    display: block;
+    /*flex-direction: row;
+    justify-content: center;
+    align-items: center;*/
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    max-width: 1500px;
 }
 
 .div-card{
-    
     width: 250px;
     height: 350px;
     background-color: white;
     margin: 10px;
-    margin-top: 315px;
-    margin-right: 20px;
+    /*margin-top: 315px;*/
+    margin-right: 15px;
     border-radius: 10px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    float: left;
+    position: relative;
+    left: 14.2%;
+    transform: translateY(90%) translateX(25%);
 }
 
 .div-yellow-line{
@@ -141,7 +197,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     height: 30px;
     border-radius: 10px;
-    padding-top: 8px;
+    padding: 1px;
     cursor: pointer;
     box-shadow: 8px 5px 25px rgba(50, 50, 50, 0.30);
     
