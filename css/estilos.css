@@ -13,7 +13,9 @@ body {
   
 header {
     background: yellow;    
-    height: 65vh;
+    /*height: 70vh;*/
+    height: fit-content;
+    padding-bottom: 80px;
 }
 
 a {
@@ -35,8 +37,38 @@ a {
   
 .menu li {
     margin-left: 10px;
+    
 }
-  
+
+.divSearch {
+   display: flex;
+}
+
+.menu li .divSearch .inputSearch{
+    display: block;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-top: 68px;
+    background: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 63px;
+    outline: none;
+}
+
+.menu li .divSearch .inputSearch:focus{
+    background-color: #ffff48;
+}
+
+.divSearch i{
+    opacity: 70%;
+    position: relative;
+    top: 68px;
+    margin-right: 20px;
+    transform: translateX(-120%);
+}
+
 .menu li a {
     display: block;
     border-radius: 3px;
@@ -48,26 +80,36 @@ a {
     margin-top: 68px;
 }
 
+.menu li button{
+    background: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 63px;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}
+
 .menu li .options:hover {
     background-color: #E8E800;
 }
 
+.menu li button:hover{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffff07;
+    transform: translateX(-10%) translateY(-10%);
+    transition: 0.5s;
+}
+
 header > .sectionConteudoHeader{
-    /*padding-top: 40px;
-    background-color: #E8E800;      
-    margin:auto;
-    max-width: 600px;
-    min-width: 300px;
-    min-height: 300px;
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;*/
     display: flex;
-    margin-left: 380px;
+    justify-content: left;
+    margin: auto;
     min-width: 300px;
     text-align: justify;
-    max-width: 750px;
-    margin-bottom: 30px;
+    max-width: 1150px;
+    margin-top: 30px;
     padding: 20px;
     color: black;
 }
@@ -78,13 +120,16 @@ header .sectionConteudoHeader .container {
 }
 
 header .sectionConteudoHeader .container h1{
-    font-size: 2.0rem;
+    font-size: 3.0rem;
     text-shadow: #00000056 2px 3px;
+    margin-bottom: 30px;
 }
 
 header .sectionConteudoHeader .imgLampadaCerebro {
-    height: 250px;
+    height: 300px;
 }
+
+
 
 main {
     min-width: 300px;
@@ -92,9 +137,8 @@ main {
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
+    padding-top: 50px;
     color: white;   
-    /*background-color: #1e1e2c;*/
-
 }
 
 main p {
@@ -102,25 +146,149 @@ main p {
     font-size: 1.1rem;
 }
 
-main .sectionImgTexto {
-    /*background-color: tomato;*/
+main h1 {
+    text-shadow: #eeff0057 1px 2px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.sectionMain1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.sectionMain1 div:nth-child(2) {
+    background-color: #fff830;
+    box-shadow: rgba(255, 255, 255, 0.808) 4px 4px 0px 0px;
+    color: #181820;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 450px;
+    margin-bottom: 50px;
+}
+
+.sectionMain1 .divCursos {
+    background-color: #fff830;
+    box-shadow: rgba(255, 255, 255, 0.808) 4px 4px;
+    color: #181820;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin-bottom: 50px;
+    align-self: flex-end;
+}
+
+
+.sectionMain1 .divCursos ul li {
+    margin-bottom: 15px;
+}
+
+
+.sectionMain1 .divAssinaturas  {
+    background-color: #fff830;
+    box-shadow: rgba(255, 255, 255, 0.808) 4px 4px;
+    color: #181820;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin-bottom: 50px;
+    align-self: flex-start;
+}
+
+.sectionMain1 .divAssinaturas h3 {
+    text-shadow: #eeff0057 1px 2px;
+}
+
+.sectionMain1 .divAssinaturas ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionMain1 .divAssinaturas ul li {
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 1.3rem;
+    background-color: #181820;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.sectionMain1 .divAssinaturas p {
+    color: white;
+    transform: translateY(200%);
+}
+
+.sectionMain1 .divAssinaturas p a{
+    color: yellow;
+    font-size: 1.2rem;
+}
+
+.sectionMain1 .divAssinaturas p a:hover{
+    cursor: pointer;
+    color: #ffef5f;
+}
+
+main .sectionSurvey {
+    margin-top: 20px;
+    margin-bottom: 130px;
+    /*margin-top: 150px;*/
     display: flex;  
     flex-wrap: wrap;
 }
 
-
-main .sectionImgTexto .teste {
-    background-color: green;
+.sectionSurvey h2 {
+    margin-bottom: 10px;
+    text-shadow: #eeff0057 1px 2px;
+    font-size: 2.5rem;
 }
 
-main .sectionImgTexto div:nth-child(1) .imgLearning{
-    width: 400px;
+.sectionSurvey p {
+    font-size: 1.5rem;
 }
 
-main .sectionImgTexto div:nth-child(2){
-    max-width: 740px;
-    padding-left: 10px;
+.sectionSurvey div p strong {
+    color: rgb(233, 233, 1);
+    text-shadow: #00000056 2px 3px;
+    font-size: 50px;
 }
+
+.buttonSurvey {
+    background-color: yellow;
+    box-shadow: #00000056 2px 3px;
+    border: none;
+    padding: 1px 10px 1px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    transform: translateY(-25%);
+    transition: 0.5s;
+}
+
+.buttonSurvey:hover {
+    cursor: pointer;
+    background-color: #40404d;
+    border: solid 2.5px yellow;
+    /*box-shadow: rgba(255, 255, 0, 0.589) 1px 2px;*/
+    color: rgb(255, 255, 2);
+    padding: 3px 13px 3px 13px;
+    transition: 0.5s;
+}
+
+.sectionQuemSomos{
+    background-color: white;
+    width: 100%;
+    height: 500px;
+}
+
+.textoQuemSomos {
+    min-width: 300px;
+    max-width: 1150px;
+    margin: auto;
+    transform: translateY(50%);
+    font-size: 60px;
+}
+
 
 
 
