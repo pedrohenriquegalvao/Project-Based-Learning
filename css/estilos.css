@@ -383,12 +383,12 @@ main .sectionSurvey {
 }
 
 .footer{
-	background-color: #24262b;
+	background-color: #282b31;
     padding: 70px 0;
 }
 
 .footer-col{
-   width: 25%;
+   width: 20%;
    padding: 0 15px;
 }
 
@@ -406,10 +406,10 @@ main .sectionSurvey {
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: #e9e61e;
 	height: 2px;
 	box-sizing: border-box;
-	width: 50px;
+	width: 60px;
 }
 
 .footer-col ul li:not(:last-child){
@@ -417,7 +417,7 @@ main .sectionSurvey {
 }
 
 .footer-col ul li a{
-	font-size: 16px;
+	font-size: 17px;
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
@@ -430,6 +430,10 @@ main .sectionSurvey {
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
+}
+
+.footer-col .emailDebi {
+    text-transform: none;
 }
 
 .footer-col .social-links a{
@@ -450,9 +454,50 @@ main .sectionSurvey {
 	background-color: #ffffff;
 }
 
+.footer-pagamento {
+    padding: 0px 15px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.footer-pagamento p{
+    width: fit-content;
+    font-size: 1.0rem;
+}
+
+.footer-pagamento div {
+    content: '';
+	left:0;
+    margin-top: 10px;
+	background-color: #e9e61e;
+	height: 2px;
+	box-sizing: border-box;
+	width: 120px;
+}
+
+
+
+@media(max-width: 780px){
+    .sectionConteudoHeader .container {
+        min-width: 90%;
+    }
+    .sectionConteudoHeader .container h1 {
+        text-align: center;
+    }
+    .sectionConteudoHeader .container p{
+      width: 100%;
+      margin-bottom: 100px;
+    }
+    .sectionConteudoHeader .imgLampadaCerebro {
+        height: 300px;
+        transform: translateX(70%);
+    }
+}
+
 @media (max-width: 823px) {
     .sectionQuemSomos .container {
         flex-direction: column;
+        width: 95%;
     }
 
     .sectionQuemSomos .container .Leo {
@@ -484,13 +529,15 @@ main .sectionSurvey {
     .footer-col{
       width: 50%;
       margin-bottom: 30px;
-  }
-  }
-  @media(max-width: 574px){
+    }
+}
+
+@media(max-width: 574px){
     .footer-col{
       width: 100%;
-  }
-  }
+    }
+}
+
 
 
 
