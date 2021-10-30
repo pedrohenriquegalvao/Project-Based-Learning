@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background: yellow;    
+    /*height: 70vh;*/
+    height: fit-content;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imgLogo1{
+    height: 150px;
+}
+  
+.menu li {
+    margin-left: 10px;
+    
+}
+
+.divSearch {
+   display: flex;
+}
+
+.menu li .divSearch .inputSearch{
+    display: block;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-top: 68px;
+    background: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 63px;
+    outline: none;
+}
+
+.menu li .divSearch .inputSearch:focus{
+    background-color: #ffff48;
+}
+
+.divSearch i{
+    opacity: 70%;
+    position: relative;
+    top: 68px;
+    margin-right: 20px;
+    transform: translateX(-120%);
+}
+
+.menu li a {
+    display: block;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    margin-right: 30px;
+}
+
+.menu li .options{
+    margin-top: 68px;
+}
+
+.menu li button{
+    background: none;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 63px;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}
+
+.menu li .options:hover {
+    background-color: #E8E800;
+}
+
+.menu li button:hover{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffff07;
+    transform: translateX(-10%) translateY(-10%);
+    transition: 0.5s;
+}
