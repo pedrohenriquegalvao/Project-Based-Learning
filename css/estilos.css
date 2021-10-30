@@ -15,7 +15,7 @@ header {
     background: yellow;    
     /*height: 70vh;*/
     height: fit-content;
-    padding-bottom: 80px;
+    
 }
 
 a {
@@ -104,9 +104,10 @@ a {
 
 header > .sectionConteudoHeader{
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     margin: auto;
-    min-width: 300px;
+    min-width: 500px;
     text-align: justify;
     max-width: 1150px;
     margin-top: 30px;
@@ -126,7 +127,8 @@ header .sectionConteudoHeader .container h1{
 }
 
 header .sectionConteudoHeader .imgLampadaCerebro {
-    height: 300px;
+    height: 460px;
+    transform: translateY(-20%);
 }
 
 
@@ -158,7 +160,7 @@ main h1 {
     flex-direction: column;
 }
 
-.sectionMain1 div:nth-child(2) {
+.sectionMain1 .divFirstBox {
     background-color: #fff830;
     box-shadow: rgba(255, 255, 255, 0.808) 4px 4px 0px 0px;
     color: #181820;
@@ -175,59 +177,13 @@ main h1 {
     padding: 20px;
     border-radius: 20px;
     max-width: 600px;
-    margin-bottom: 50px;
+    margin-bottom: 115px;
     align-self: flex-end;
 }
 
 
 .sectionMain1 .divCursos ul li {
     margin-bottom: 15px;
-}
-
-
-.sectionMain1 .divAssinaturas  {
-    background-color: #fff830;
-    box-shadow: rgba(255, 255, 255, 0.808) 4px 4px;
-    color: #181820;
-    padding: 20px;
-    border-radius: 20px;
-    max-width: 700px;
-    margin-bottom: 50px;
-    align-self: flex-start;
-}
-
-.sectionMain1 .divAssinaturas h3 {
-    text-shadow: #eeff0057 1px 2px;
-}
-
-.sectionMain1 .divAssinaturas ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.sectionMain1 .divAssinaturas ul li {
-    margin-top: 15px;
-    margin-left: 40px;
-    font-size: 1.3rem;
-    background-color: #181820;
-    color: white;
-    padding: 10px;
-    border-radius: 7px;
-}
-
-.sectionMain1 .divAssinaturas p {
-    color: white;
-    transform: translateY(200%);
-}
-
-.sectionMain1 .divAssinaturas p a{
-    color: yellow;
-    font-size: 1.2rem;
-}
-
-.sectionMain1 .divAssinaturas p a:hover{
-    cursor: pointer;
-    color: #ffef5f;
 }
 
 main .sectionSurvey {
@@ -240,7 +196,7 @@ main .sectionSurvey {
 
 .sectionSurvey h2 {
     margin-bottom: 10px;
-    text-shadow: #eeff0057 1px 2px;
+    text-shadow: #eeff0057 2px 3px;
     font-size: 2.5rem;
 }
 
@@ -250,7 +206,7 @@ main .sectionSurvey {
 
 .sectionSurvey div p strong {
     color: rgb(233, 233, 1);
-    text-shadow: #00000056 2px 3px;
+    text-shadow: #000000c4 4px 5px;
     font-size: 50px;
 }
 
@@ -272,23 +228,269 @@ main .sectionSurvey {
     /*box-shadow: rgba(255, 255, 0, 0.589) 1px 2px;*/
     color: rgb(255, 255, 2);
     padding: 3px 13px 3px 13px;
-    transition: 0.5s;
+    transition: all 0.5s ease;
+}
+
+
+
+.sectionMain1 .divAssinaturas  {
+    background-color: #fff830;
+    box-shadow: rgba(255, 255, 255, 0.808) 4px 4px;
+    color: #181820;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin-bottom: 115px;
+    align-self: flex-start;
+}
+
+.divAssinaturas .divContainer{
+    min-height: 200px;
+}
+
+.divAssinaturas .divContainer h3 {
+    text-shadow: rgb(175, 175, 71) 1px 2px;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.divAssinaturas .divContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divAssinaturas .divContainer ul li {
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 1.3rem;
+    background-color: #181820;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+
+.divAssinaturas .acessarAssinatura  p {
+    color: #181820;
+}
+
+.divAssinaturas .acessarAssinatura  p a{
+    color: rgb(95, 95, 95);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.divAssinaturas .acessarAssinatura p a:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+
+.sectionMain1 .divForum {
+    text-align: end;
+    align-self: flex-end;
+    max-width: 500px;
+    padding-right: 70px;
+}
+
+.divForum h2{
+    font-size: 2.7rem;
+    color: yellow;
+    text-shadow: #000000c4 4px 5px;
+    margin-bottom: 20px;
+    text-align: end;
+}
+
+.divForum p{
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.divForum button {
+    border: none;
+    background: none;
+    padding: 10px;
+    color: white;
+    border: solid 2px white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.divForum button:hover {
+    padding: 10px;
+    color: #181820;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .sectionQuemSomos{
     background-color: white;
-    width: 100%;
-    height: 500px;
+    min-height: 500px;
 }
 
-.textoQuemSomos {
-    min-width: 300px;
-    max-width: 1150px;
+.sectionQuemSomos .geral {
+    padding-top: 30px;
     margin: auto;
-    transform: translateY(50%);
-    font-size: 60px;
+
+    max-width: 1150px;
 }
 
+.sectionQuemSomos .geral h3 {
+    font-size: 2.0rem;
+}
+
+.sectionQuemSomos .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0000000e;
+    border-radius: 70px;
+    max-width: 1550px;
+    margin: auto;
+    font-size: 60px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+
+.sectionQuemSomos .container .Leo {
+    max-width: 32%;
+    border-right: solid 3px #181820;
+}
+
+.sectionQuemSomos .container .Pedro {
+    max-width: 32%;
+    border-right: solid 3px #181820;
+    margin-right: 10px;
+}
+
+.sectionQuemSomos .container .Thierry {
+    max-width: 32%;
+}
+
+
+.footer .container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.container .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+@media (max-width: 823px) {
+    .sectionQuemSomos .container {
+        flex-direction: column;
+    }
+
+    .sectionQuemSomos .container .Leo {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: solid 3px #181820;
+    }
+
+    .sectionQuemSomos .container .Pedro {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: solid 3px #181820;
+    }
+
+    .sectionQuemSomos .container .Thierry {
+        max-width: 80%;
+        margin: auto;
+        border-right: none;
+        border-bottom: solid 3px #181820;
+    }
+
+}
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
 
 
 
