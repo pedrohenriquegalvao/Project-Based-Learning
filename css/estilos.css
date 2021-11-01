@@ -174,7 +174,7 @@ main .containerTopo {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "info info "
                         "curso assinatura";
     grid-row-gap: 200px;
@@ -210,6 +210,8 @@ main .containerTopo {
 
 
 
+
+
 .container .divContainerCursos {
     /*background-color: red;*/
     grid-area: curso;
@@ -221,7 +223,7 @@ main .containerTopo {
     width: 250px;
 }
 
-.divContainerCursos h1{
+.divContainerCursos .divTitulo h1{
     font-size: 1.3rem;
     margin-bottom: 45px;
     padding: 7px;
@@ -231,27 +233,70 @@ main .containerTopo {
     font-size: 1.1rem;
 }
 
+
+.divProgressoes {
+    margin-bottom: 45px;
+}
+
+.divProgressoes p{
+    font-size: 1.1rem;
+    color: #ffb612;
+}
+
+.divFinalizados h3 {
+    font-size: 1.1rem;
+}
+
+.divFinalizados .listaCursos {
+    padding-left: 20px;
+}
+
+.divFinalizados .listaCursos li{
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container .divContainerAssinatura {
     /*background-color: blue;*/
     grid-area: assinatura;
-
 }
 
 .divContainerAssinatura .divTitulo {
     background-color: #ffb612;
     width: 250px;
+    margin-bottom: 45px;
 }
 
-.divContainerAssinatura h1{
+.divContainerAssinatura .divTitulo h1{
     font-size: 1.3rem;
-    margin-bottom: 45px;
     padding: 7px;
 }   
 
-.divContainerAssinatura p{
-    font-size: 1.1rem;
-    color: #ffb612;
-}
 
 
 
