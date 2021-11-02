@@ -210,7 +210,7 @@ label{
     color: black;
 }
 
-p{
+.div-mensagem p{
     position: absolute;
 
     left: 50%;
@@ -342,6 +342,7 @@ p{
 	box-sizing: border-box;
 	width: 120px;
 }
+
 
 @media(max-width: 767px){
     .footer-col{
