@@ -12,8 +12,6 @@ header {
     background: yellow;    
     /*height: 70vh;*/
     height: fit-content;
-    
-    
 }
 
 a {
@@ -147,8 +145,9 @@ main .containerTopo {
 }
 
 .divContainerOptions {
-    width: 225px;
-    /*background-color: navy;*/
+    width: 305px;
+    height: fit-content;
+    align-self: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -157,10 +156,15 @@ main .containerTopo {
 
 .divContainerOptions a{
     color: rgb(185, 185, 18);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    transition: all 0.4s ease;
 }
 
+.divContainerOptions a:hover {
+    transform: translateY(50%);
+}
 
 
 .container {
@@ -174,16 +178,21 @@ main .containerTopo {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 500px 1fr;
     grid-template-areas: "info info "
                         "curso assinatura";
-    grid-row-gap: 200px;
+    grid-row-gap: 100px;
+    column-gap: 150px;
+}
+
+.container a:hover {
+    color: #b68920;
 }
 
 .container .divContainerInfo {
-    /*background-color: aqua;*/
     grid-area: info;
     padding-left: 70px;
+    
 }
 
 .divContainerInfo .divTitulo {
@@ -197,12 +206,15 @@ main .containerTopo {
     padding: 7px;
 }
 
+.divCampos p{
+    font-size: 1.0rem;
+}
 .divCampos .campos{
     width: 700px;
     margin-bottom: 20px;
 }
 
-.divEditar p{
+.divEditar p a{
     color: #ffb612;
     font-size: 0.9rem;
     font-weight: bold;
@@ -210,12 +222,10 @@ main .containerTopo {
 
 
 
-
-
 .container .divContainerCursos {
-    /*background-color: red;*/
     grid-area: curso;
     padding-left: 55px;
+    height: fit-content;
 }
 
 .divContainerCursos .divTitulo {
@@ -282,34 +292,9 @@ main .containerTopo {
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container .divContainerAssinatura {
-    /*background-color: blue;*/
     grid-area: assinatura;
+    height: fit-content;
 }
 
 .divContainerAssinatura .divTitulo {
@@ -323,10 +308,140 @@ main .containerTopo {
     padding: 7px;
 }   
 
+.divContainerAssinatura p{
+    margin-bottom: 50px;
+}
+
+.divContainerAssinatura .divButtons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.divButtons button {
+    background: none;
+    padding: 10px;
+    width: fit-content;
+    border: solid 1px #181820;
+    border-radius: 1.5em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffb612;
+}
+
+.divButtons button:hover {
+    cursor: pointer;
+}
+
+.divButtons a {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffb612;
+    
+}
 
 
+.footer .footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
 
-.footer {
-    background-color: black;
-    height: 30vh;
+.footer-container .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.footer{
+	background-color: #282b31;
+    padding: 70px 0;
+}
+
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e9e61e;
+	height: 2px;
+	box-sizing: border-box;
+	width: 60px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 17px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .emailDebi {
+    text-transform: none;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.footer-pagamento {
+    padding: 0px 15px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.footer-pagamento p{
+    width: fit-content;
+    font-size: 1.0rem;
+}
+
+.footer-pagamento div {
+    content: '';
+	left:0;
+    margin-top: 10px;
+	background-color: #e9e61e;
+	height: 2px;
+	box-sizing: border-box;
+	width: 120px;
 }
