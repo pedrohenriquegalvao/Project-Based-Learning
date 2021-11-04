@@ -17,7 +17,7 @@ body {
 }
 
 
-main.container{
+main.container-cadastro{
     background: white;
     width: 350px;
     max-width: 350px;
@@ -27,7 +27,7 @@ main.container{
     border-radius: 10px;
 }
 
-.divAmarelo {
+.div-amarelo-cadastro {
     background-color: yellow;
     height: 50px;
     width: 350px;
@@ -111,7 +111,7 @@ form .input-field{
     transform: scaleX(1);
 }
 
-.divFooter {
+.div-footer-cadastro {
     padding-top: 50px;
     font-size: small;
     text-align: center;
