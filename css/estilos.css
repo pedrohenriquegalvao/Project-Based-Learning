@@ -15,13 +15,11 @@ header {
     background: yellow;    
     /*height: 70vh;*/
     height: fit-content;
-    
 }
 
 a {
     text-decoration: none;
     color: black;
-    
 }
 
 .menu {
@@ -107,7 +105,7 @@ header > .sectionConteudoHeader{
     flex-wrap: wrap;
     justify-content: left;
     margin: auto;
-    min-width: 500px;
+    
     text-align: justify;
     max-width: 1150px;
     margin-top: 30px;
@@ -475,6 +473,9 @@ main .sectionSurvey {
 	width: 120px;
 }
 
+.footer-pagamento img {
+    width: 400px;
+}
 
 
 @media(max-width: 780px){
@@ -536,6 +537,34 @@ main .sectionSurvey {
     .footer-col{
       width: 100%;
     }
+}
+
+@media(max-width: 540px){
+    .sectionConteudoHeader { 
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .imgLampadaCerebro {
+        max-height: 360px;
+    }
+    .sectionSurvey {
+        background-color: red;
+    }
+
+    .sectionQuemSomos {
+        background-color: aqua; 
+    }
+
+    .footer-pagamento img {
+        width: 100%;
+        background-color: red;
+    }
+
+    
+
 }
 
 
