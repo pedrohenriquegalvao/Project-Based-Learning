@@ -7,9 +7,9 @@
     <title>Questionário</title>
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
 
-    <script src="./Script.js"></script>
+    <script src="js/script.js"></script>
 
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
@@ -26,7 +26,7 @@
         <form>
 
             <p class="p-normal">Primeiramente, qual o seu nome?</p>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" class="input-usuario">
             <p class="p-active">Qual sua idade?</p>
             <input type="text" name="idade" id="idade">
             <p class="p-active">Qual seu hobby?</p>
@@ -46,6 +46,11 @@
 
     </div>
     <br>
-    <button onclick="removerUsuarios()" class="button-remover">Remover</button>
+    <button onclick="excluirUsuarios()" class="button-excluir">Excluir</button>
+    <button onclick="mostrarUsuarios()" class="button-mostrar">Mostrar</button>
+
+    <div class="container-respostas">
+       
+    </div>
 </body>
 </html>
