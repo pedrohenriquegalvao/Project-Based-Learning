@@ -2,76 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Questionário</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+
     <script src="./Script.js"></script>
-    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    
+    
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-    <div>
-        <img src="./img/image.png">
-        <br>
-        <h1>Questionario</h1>
-        <br>
-        <label>Voce se interessa em mecanica?</label>
-        <br>
-        <input type="checkbox" id="1"><label>Nao</label>
-        <input type="checkbox" id="2"><label>Talvez</label>
-        <input type="checkbox" id="3"><label>Sim</label>
-        <br>
-        <label>Voce gosta de artes?</label>
-        <br>
-        <input type="checkbox" id="4"><label>Nao</label>
-        <input type="checkbox" id="5"><label>Talvez</label>
-        <input type="checkbox" id="6"><label>Sim</label>
-        <br>
-        <label>Ja cozinhou antes?</label>
-        <br>
-        <input type="checkbox" id="7"><label>Nao</label>
-        <input type="checkbox" id="8"><label>Talvez</label>
-        <input type="checkbox" id="9"><label>Sim</label>
-        <br>
-        <label>Ja reparou, montou ou desmontou algo antes</label>
-        <br>
-        <input type="checkbox" id="10"><label>Nao</label>
-        <input type="checkbox" id="11"><label>Talvez</label>
-        <input type="checkbox" id="12"><label>Sim</label>
-        <br>
-        <label>Ja se imaginou liderando?</label>
-        <br>
-        <input type="checkbox" id="13"><label>Nao</label>
-        <input type="checkbox" id="14"><label>Talvez</label>
-        <input type="checkbox" id="15"><label>Sim</label>
-        <br>
-        <label>Quanto tempo livre voce tem na semana?</label>
-        <br>
-        <input class="mdl-textfield__input" type="text" id="sample3" placeholder="Responda aqui:">
-        <label>Qual era sua materia favorita na escola/faculdade?</label>
-        <br>
-        <input class="mdl-textfield__input" type="text" id="sample3" placeholder="Responda aqui:">
-        <label>Voce se segue alguma rede social de artes?</label>
-        <br>
-        <input type="checkbox" id="22"><label>Nao</label>
-        <input type="checkbox" id="23"><label>Talvez</label>
-        <input type="checkbox" id="24"><label>Sim</label>
-        <br>
-        <label>Voce assiste canais de culinaria?</label>
-        <br>
-        <input type="checkbox" id="25"><label>Nao</label>
-        <input type="checkbox" id="26"><label>Talvez</label>
-        <input type="checkbox" id="27"><label>Sim</label>
-        <br>
-        <label>Voce gosta de uma competicao?</label>
-        <br>
-        <input type="checkbox" id="28"><label>Nao</label>
-        <input type="checkbox" id="29"><label>Talvez</label>
-        <input type="checkbox" id="30"><label>Sim</label>
-        <br>
-        <button class="mdl-button mdl-js-button mdl-button--raised" id="Enviar">Enviar</button>
+    <div class="container-forum">
+
+        <div class="div-titulo">
+            <h2>Questionário</h2>
+            <img src="./img/logo1.png">
+        </div>
+        
+        <form>
+
+            <p class="p-normal">Primeiramente, qual o seu nome?</p>
+            <input type="text" name="nome" id="nome">
+            <p class="p-active">Qual sua idade?</p>
+            <input type="text" name="idade" id="idade">
+            <p class="p-active">Qual seu hobby?</p>
+            <input type="text" name="hobby" id="hobby">
+            <p class="p-active">Qual a sua formação? (Ensino fundamental, médio, graduação ou pós-graduação)</p>
+            <input type="text" name="formacao" id="formacao">
+            <p class="p-active">Você se considera uma pessoa comunicativa?</p>
+            <input type="text" name="comunicativa" id="comunicativa"> 
+            <p class="p-active">Você costuma ter contato com tecnologia?</p>
+            <input type="text" name="tecnologia?" id="tecnologia">
+            <p class="p-active">Você já utilizou algum site de cursos online? (Sim/ Não)</p>
+            <input type="text" name="cursos" id="cursos">
+
+        </form>
+
+        <button onclick="salvarRespostas()" id="Enviar">Enviar</button>
+
     </div>
 </body>
 </html>
