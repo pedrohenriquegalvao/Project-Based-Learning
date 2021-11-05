@@ -1,7 +1,10 @@
-let respostasUsuarios = [];
-let usuario = [];
+let respostasUsuarios = JSON.parse(localStorage.getItem('respostasUsuarios')) || []; // na primeira vez na aplicação, esse item do localStorage n existe. Se for esse o caso, recebe um array vazio.
+let usuario = [];   
 
 function salvarRespostas() {
+
+    usuario = [];
+
     var nome = document.querySelector('input#nome').value;
     usuario.push(nome);
 
@@ -22,13 +25,20 @@ function salvarRespostas() {
 
     var cursos = document.querySelector('input#cursos').value;
     usuario.push(cursos);
-
+    
     respostasUsuarios.push(usuario);
 
-    localStorage.setItem('respostasUsuarios', respostasUsuarios);
+
+    localStorage.setItem('respostasUsuarios', JSON.stringify(respostasUsuarios));
 
     var containerForum = document.querySelector('div.container-forum');
     containerForum.innerHTML += nome;
     
+}
 
+function removerUsuarios() {
+    const index = respostasUsuarios.indexOf(usuario);
+    localStorage.removeItem();
+    alert('n removi')
+       
 }
