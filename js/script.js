@@ -1,27 +1,19 @@
-var listaCursos = [[0,'Nome do curso','imagemTeste.png','Descrição do curso', false], [1,'Nome do curso','imagemTeste.png','Descrição do curso', false],
- [2,'Nome do curso','imagemTeste.png','Descrição do curso', false], [3,'Nome do curso','imagemTeste.png','Descrição do curso', false],
- [4,'Nome do curso','imagemTeste.png','Descrição do curso', false], [5,'Nome do curso','imagemTeste.png','Descrição do curso', false],
- [6,'Nome do curso','imagemTeste.png','Descrição do curso', false], [7,'Nome do curso','imagemTeste.png','Descrição do curso', false],
- [8,'Nome do curso','imagemTeste.png','Descrição do curso', false], [9,'Nome do curso','imagemTeste.png','Descrição do curso', false],
- [10,'Nome do curso','imagemTeste.png','Descrição do curso', false], [11,'Nome do curso','imagemTeste.png','Descrição do curso', false],
- [12,'Nome do curso','imagemTeste.png','Descrição do curso', false], [13,'Nome do curso','imagemTeste.png','Descrição do curso', false],
- [14,'Nome do curso','imagemTeste.png','Descrição do curso', false]];
+var listaCursos = [[0,'Nome do curso','imagemTeste.png','Descrição do curso'], [1,'Nome do curso','imagemTeste.png','Descrição do curso'],
+ [2,'Nome do curso','imagemTeste.png','Descrição do curso'], [3,'Nome do curso','imagemTeste.png','Descrição do curso'],
+ [4,'Nome do curso','imagemTeste.png','Descrição do curso'], [5,'Nome do curso','imagemTeste.png','Descrição do curso'],
+ [6,'Nome do curso','imagemTeste.png','Descrição do curso'], [7,'Nome do curso','imagemTeste.png','Descrição do curso'],
+ [8,'Nome do curso','imagemTeste.png','Descrição do curso'], [9,'Nome do curso','imagemTeste.png','Descrição do curso'],
+ [10,'Nome do curso','imagemTeste.png','Descrição do curso'], [11,'Nome do curso','imagemTeste.png','Descrição do curso'],
+ [12,'Nome do curso','imagemTeste.png','Descrição do curso'], [13,'Nome do curso','imagemTeste.png','Descrição do curso'],
+ [14,'Nome do curso','imagemTeste.png','Descrição do curso']];
 
 var cursosAcessados = []
 
 window.onload = function(){
 
     montarCardProdutos();
-    if(JSON.parse(window.localStorage.getItem('cursosAcessados')) != undefined)
-    {
-        cursosAcessados = JSON.parse(window.localStorage.getItem('cursosAcessados'));
-    }
-    else
-    {
-        cursosAcessados = [];
-    }
 
-}
+}    
 
 function montarCardProdutos(){
 
@@ -43,34 +35,13 @@ function montarCardProdutos(){
         conteudo += '<label>'+listaCursos[i][3]+'</label>'
         conteudo += '</div>';
 
-
-        if(listaCursos[i][4] == false)
-        {
-            conteudo += '<div class="div-card-acessar" onclick="acessar('+listaCursos[i][0]+')" >';
-            conteudo += 'Iniciar curso';
-            conteudo += '</div>';
-        }
-        else
-        {
-            conteudo += '<div class="div-card-acessar curso-acessado" >';
-            conteudo += 'Acessado';
-            conteudo += '</div>';
-        }
+        conteudo += '<div class="div-card-acessar" onclick="" >';
+        conteudo += 'Iniciar curso';
+        conteudo += '</div>';
 
         conteudo += '</div>';
 
         document.getElementById("div-pagina").innerHTML += conteudo;
     }
 
-}
-
-function acessar(id){
-
-    listaCursos[id][4] = true;
-
-    cursosAcessados.push(listaCursos[id]);
-
-    window.localStorage.setItem("cursosAcessados", JSON.stringify(cursosAcessados));
-
-    montarCardProdutos();
 }
