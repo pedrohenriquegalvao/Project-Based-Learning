@@ -12,12 +12,12 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-
-main.container{
+main.container-login{
     background: white;
     width: 350px;
     max-width: 350px;
@@ -27,23 +27,13 @@ main.container{
     border-radius: 10px;
 }
 
-.divAmarelo {
-    background-color: yellow;
-    height: 50px;
-    width: 350px;
-    transform: translateX(-9.15%);
-    border-radius: 10px 10px 0px 0px;
-}
-
 main img{
-    /*width: 70 logo lampada solo */
     width: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
 }
-
 
 .input-field{
     position: relative;
@@ -82,8 +72,9 @@ form input[type="submit"]:hover {
     
 }
 
-form .input-field{
+form .input-field:first-child{
     margin-bottom: 1.5rem;
+
 }
 
 .input-field .underline::before{
@@ -111,12 +102,27 @@ form .input-field{
     transform: scaleX(1);
 }
 
-.divFooter {
+.divFooterLogin {
     padding-top: 50px;
     font-size: small;
     text-align: center;
     color: rgba(0, 0, 0, 0.8);
 }
 
+.divAmareloLogin {
+    background-color: yellow;
+    height: 50px;
+    width: 350px;
+    transform: translateX(-9.15%);
+    border-radius: 10px 10px 0px 0px;
+}
 
-
+.button-voltar-homepage{
+    margin-top: 30px;
+    background-color: yellow;
+    padding: 5px;
+    width: 150px;
+    border-radius: 10px;
+ }
+ 
+ 
