@@ -127,3 +127,7 @@ form .input-field{
    border-radius: 10px;
 }
 
+.button-voltar-homepage:hover {
+    cursor: pointer;
+}
+

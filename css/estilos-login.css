@@ -123,6 +123,11 @@ form .input-field:first-child{
     padding: 5px;
     width: 150px;
     border-radius: 10px;
- }
+}
+
+.button-voltar-homepage:hover {
+    cursor: pointer;
+}
+
  
  

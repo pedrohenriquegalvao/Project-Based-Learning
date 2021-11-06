@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos-home-page.css">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/6f9e32056a.js" crossorigin="anonymous"></script>
 
@@ -22,10 +22,10 @@
                     </div>
                 </li>
                 <li><a href="/" class="options">Cursos</a></li>
-                <li><a href="/" class="options">Contato</a></li>
-                <li><a href="/" class="options entrar">Entrar</a></li>
+                <li><a href="#contato" class="options">Contato</a></li>
+                <li><a href="paginas/login.html" class="options entrar">Entrar</a></li>
                 <li><a href=""><i class="fas fa-user-circle"></i></a></li>
-                <li><button>MATRICULE-SE</button></li>
+                <li><button onclick="location.href='paginas/cadastro.html'">MATRICULE-SE</button></li>
 
             </ul>
         </nav>
@@ -90,15 +90,11 @@
             </div>
 
             
-        </section>
-        
-    
-
-        
+        </section>        
 
     </main>
         
-    <section class="sectionQuemSomos">
+    <section class="sectionQuemSomos" id="quem-somos">
         <div class="geral">
             <h2>QUEM SOMOS?</h2>
             <h3>
@@ -129,7 +125,7 @@
     
    
 
-    <footer class="footer">
+    <footer class="footer" id="contato">
         <div class="container">
             <div class="row">
 
@@ -149,15 +145,14 @@
                         <li><a href="#">áreas de conhecimento</a></li>
                         <li><a href="#">questionário survey</a></li>
                         <li><a href="#">Fórum</a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+            
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Grupo Debi</h4>
                     <ul>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#quem-somos">Sobre</a></li>
                         <li><a href="#">fone: 3333-3333</a></li>
                         <li><a href="#">Whatsapp: 99999-9999</a></li>
                         <li><a href="#" class="emailDebi">Email: grupodebi@pjbl.com</a></li>
