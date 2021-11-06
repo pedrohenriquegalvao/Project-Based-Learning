@@ -6,14 +6,13 @@
 
 body{
     background-color: #181820;       
-    min-height: 100vh;    
-    min-width: 100vw;    
     display: flex;    
     align-items: center;    
     justify-content: center;
     flex-direction: column;
 }
-.container-forum{
+.container-survey{
+    margin-top: 20px;
     background: white;
     width: 370px;
     max-width: 420px;
@@ -67,6 +66,11 @@ form input:focus {
     outline: none;
 }
 
+.container-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
 .button-enviar{
     border: none;
     background-color: yellow;
@@ -104,36 +108,67 @@ form input:focus {
     padding: 5px 30px 5px 30px;
     border-radius: 2px;
     font-size: 1.1em;
+    margin-bottom: 20px;
 }
 
 .button-mostrar:hover {
     cursor: pointer;
 }
 
+.button-ocultar{
+    border: solid 1px yellow;
+    background-color: rgb(0, 0, 0);
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(128, 128, 128, 0.514);
+    padding: 5px 30px 5px 30px;
+    border-radius: 2px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
 .container-respostas {
     display: flex;
     flex-wrap: wrap;
-    width: 1150px;
     max-width: 1150px;
-    background-color: red;
-    
+    margin-bottom: 200px;
 }
 
 .card-resposta-usuario {
     width: 250px;
-    height: 300px;
+    height: 410px;
     background-color: white;
-    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
     border-radius: 10px;
     padding: 10px;
 }
 
+.card-resposta-usuario h2{ 
+    background-color: yellow;
+    text-shadow: rgba(128, 128, 128, 0.801) 1.5px 1.5px;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.card-resposta-usuario .card-resposta-campos {
+    background-color: rgba(128, 128, 128, 0.541);
+    border-radius: 0 0 10px 10px;
+    min-height: 320px;
+    padding: 5px;
+}
+
 .card-resposta-usuario p{
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 0, 0.568);
 }
 
 
+@media (max-width: 1160px) {
+    .container-respostas {
+        justify-content: space-evenly;
+    }
+}
 
 @media (max-width: 435px) {
     .container-forum {

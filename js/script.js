@@ -3,7 +3,8 @@ let usuario = [];
 
 
 function salvarRespostas() {
-
+    let divRespostas = document.querySelector('div.container-respostas'); 
+    divRespostas.innerHTML = '';
     usuario = [];
 
     var nome = document.querySelector('input#nome').value;
@@ -28,13 +29,16 @@ function salvarRespostas() {
     usuario.push(cursos);
     
     respostasUsuarios.push(usuario);
-
-
     localStorage.setItem('respostasUsuarios', JSON.stringify(respostasUsuarios));
 
-    let divRespostas = document.querySelector('div.container-respostas'); 
-    divRespostas.innerHTML += nome;
     
+    document.getElementById('nome').value='';
+    document.getElementById('idade').value='';
+    document.getElementById('hobby').value='';
+    document.getElementById('formacao').value='';
+    document.getElementById('comunicativa').value='';
+    document.getElementById('tecnologia').value='';
+    document.getElementById('cursos').value='';
 }
 
 function excluirUsuarios() {
@@ -47,18 +51,25 @@ function excluirUsuarios() {
         divRespostas.innerHTML = "";
     } else {
         alert("Ação cancelada")
-        divRespostas.innerHTML += respostasUsuarios;
-        alert(respostasUsuarios)
     }
     
 }
 
 function mostrarUsuarios() {
+    let divButtons = document.querySelector('div.container-buttons'); 
+    divButtons.innerHTML += '<button onclick="ocultarUsuarios()" class="button-ocultar">Ocultar</button>';
+
     let divRespostas = document.querySelector('div.container-respostas'); 
     divRespostas.innerHTML = "";
+
     for (i = 0; i < respostasUsuarios.length; i++) {
         var conteudo = "";
+        
         conteudo += '<div class="card-resposta-usuario">';
+        conteudo += '<h2>Respostas do usuário ' + Number(i+1) + '</h2>' ;
+
+        conteudo += '<div class="card-resposta-campos">';
+
         conteudo += '<p>Nome:' + respostasUsuarios[i][0] + '</p>' ;
         conteudo += '<p>Idade: ' + respostasUsuarios[i][1] + ' </p>';
         conteudo += '<p>Hobby: ' + respostasUsuarios[i][2] + ' </p>';
@@ -66,8 +77,21 @@ function mostrarUsuarios() {
         conteudo += '<p>É uma pessoa comunicativa: ' + respostasUsuarios[i][4] + ' </p>';
         conteudo += '<p>Tem contato com tecnologia: ' + respostasUsuarios[i][5] + ' </p>';
         conteudo += '<p>Já utilizou algum site de cursos: ' + respostasUsuarios[i][6] + '</p>';
+
+        conteudo += '</div>';
+
         conteudo += '</div>';
         divRespostas.innerHTML += conteudo;
     }
-    alert("thierry puta");
+
+}
+
+function ocultarUsuarios(){
+    let divButtons = document.querySelector('div.container-buttons'); 
+    let buttonOcultar = document.querySelector('button.button-ocultar');
+
+    divButtons.removeChild(buttonOcultar);
+
+    let divRespostas = document.querySelector('div.container-respostas'); 
+    divRespostas.innerHTML = "";
 }
