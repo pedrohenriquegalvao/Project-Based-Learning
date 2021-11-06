@@ -78,6 +78,15 @@ a {
     margin-top: 68px;
 }
 
+.menu li .fa-user-circle{
+    margin-top: 68px;
+    margin-left: 0;
+}
+
+.menu li i:hover{ 
+    cursor: pointer;
+}
+
 .menu li button{
     background: none;
     border: solid 1px black;
@@ -292,7 +301,6 @@ main .sectionSurvey {
     align-self: flex-end;
     max-width: 500px;
     padding-right: 70px;
-    background-color: red;
 }
 
 .divForum h2{
@@ -559,9 +567,7 @@ main .sectionSurvey {
     .imgLampadaCerebro {
         max-height: 360px;
     }
-    .sectionSurvey {
-        background-color: red;
-    }
+    
 
     .sectionQuemSomos {
         background-color: aqua; 
@@ -569,14 +575,12 @@ main .sectionSurvey {
 
     .footer-pagamento img {
         width: 100%;
-        background-color: red;
     }
 
 }
 
 @media (max-width: 390px) {
     .sectionQuemSomos .container {
-        background-color: red;
         max-width: 80%;
     }
 }
