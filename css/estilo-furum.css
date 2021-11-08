@@ -1,0 +1,79 @@
+body{
+    background: linear-gradient(45deg, yellow, DimGrey);    
+    background-repeat: no-repeat;    
+    height: 98.34vh;      
+    display: flex;    
+    align-items: center;    
+    justify-content: center;
+}
+
+div{
+    background: white;
+    max-width: 1500px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+div.caixa{
+    background: gold;
+    width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    margin: 150px 50px 50px 50px;
+    border-radius: 20px;
+    float: left;
+    /*transform: translateX(6%) translateY(-7%);*/
+    display: flex;    
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+div.caixa:hover{
+    cursor: pointer;
+}
+button{
+    color:dimgrey;
+    border-color:gold;
+    border-radius: 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+label{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.Logo{
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+}
+header h1{
+    align-self: center;
+    justify-self: center;
+    transform: translateX(75%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
