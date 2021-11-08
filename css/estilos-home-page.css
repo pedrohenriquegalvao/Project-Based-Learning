@@ -329,10 +329,8 @@ main .sectionSurvey {
 }
 
 .divForum button:hover {
-    padding: 10px;
     color: #181820;
     background-color: white;
-    border-radius: 50px;
     cursor: pointer;
 }
 
