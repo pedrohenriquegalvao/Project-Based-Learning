@@ -1,18 +1,19 @@
 * {
-margin: 0px;
-padding: 0px;
-list-style: none;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
-margin: 0px;
-background-color: #181820;
+    margin: 0px;
+    background-color: #181820;
 }
 
 header {
     background: yellow;    
     height: fit-content;
+    font-size: 1.2rem;
 }
 
 a {
@@ -37,12 +38,13 @@ a {
 
 .divSearch {
     display: flex;
+    font-size: 1.4rem;
  }
  
  .menu li .divSearch .inputSearch{
     display: block;
     border-radius: 3px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-top: 68px;
     background: none;
     border: solid 1px black;
@@ -73,6 +75,13 @@ a {
 
 .menu li .options{
     margin-top: 68px;
+    font-size: 1.0rem;
+}
+
+.menu li .fa-user-circle{
+    margin-top: 68px;
+    margin-left: 0;
+    font-size: 1.3rem;
 }
 
 .menu li .options:hover {
@@ -86,7 +95,7 @@ a {
     border-radius: 5px;
     padding: 3px;
     margin-top: 63px;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     transition: 0.5s;
 }
 

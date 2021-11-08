@@ -35,9 +35,9 @@ function montarCardProdutos(){
         conteudo += '<label>'+listaCursos[i][3]+'</label>'
         conteudo += '</div>';
 
-        conteudo += '<div class="div-card-acessar" onclick="" >';
+        conteudo += '<a href="pagina-curso.html"><div class="div-card-acessar" " >';
         conteudo += 'Iniciar curso';
-        conteudo += '</div>';
+        conteudo += '</div></a>';
 
         conteudo += '</div>';
 
