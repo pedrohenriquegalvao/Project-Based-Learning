@@ -1,8 +1,7 @@
 body{
     background: linear-gradient(45deg, yellow, DimGrey);    
     background-repeat: no-repeat;    
-    min-height: 100vh;    
-    min-width: 100vw;    
+    height: 98.34vh;      
     display: flex;    
     align-items: center;    
     justify-content: center;
@@ -10,10 +9,7 @@ body{
 
 div{
     background: white;
-    width: 1400px;
     max-width: 1500px;
-    min-height: 700px;
-    padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
 }
@@ -26,11 +22,10 @@ div.caixa{
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
-    margin-top: 150px;
+    margin: 150px 50px 50px 50px;
     border-radius: 20px;
     float: left;
-    margin-right: 50px;
-    transform: translateX(27%);
+    /*transform: translateX(6%) translateY(-7%);*/
     display: flex;    
     align-items: center;    
     justify-content: center;
@@ -76,4 +71,9 @@ header h1{
     align-self: center;
     justify-self: center;
     transform: translateX(75%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
