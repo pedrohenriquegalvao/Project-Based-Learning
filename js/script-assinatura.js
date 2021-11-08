@@ -20,10 +20,10 @@ function montarCardProdutos(){
         conteudo += '<div class="div-yellow-line">';
         conteudo += '</div>'
         conteudo += '<div class="div-card-img">';
-        conteudo += '<img src="img/'+listaCursos[i][2]+'" />';
+        conteudo += '<img src="../img/'+listaCursos[i][2]+'" />';
         conteudo += '</div>';
         conteudo += '<div class="div-card-img-label">';
-        conteudo += '<img src="img/'+listaCursos[i][1]+'" />';
+        conteudo += '<img src="../img/'+listaCursos[i][1]+'" />';
         conteudo += '<label>Acesso a todos os cursos.</label>'
         conteudo += '</div>';
 
