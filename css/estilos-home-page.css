@@ -339,6 +339,8 @@ main .sectionSurvey {
 .sectionQuemSomos{
     background-color: white;
     min-height: 500px;
+    padding-bottom: 80px;
+    padding-top: 50px;
 }
 
 .sectionQuemSomos .geral {
@@ -358,28 +360,28 @@ main .sectionSurvey {
     flex-wrap: wrap;
     background-color: #0000000e;
     border-radius: 70px;
-    max-width: 1550px;
+    max-width: 1150px;
     margin: auto;
     font-size: 60px;
-    padding-top: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 50px;
+    padding: 50px 10px 50px 10px;
+    text-align: justify;
 }
 
 .sectionQuemSomos .container .Leo {
-    max-width: 32%;
-    border-right: solid 3px #181820;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
 .sectionQuemSomos .container .Pedro {
-    max-width: 32%;
-    border-right: solid 3px #181820;
-    margin-right: 10px;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
 .sectionQuemSomos .container .Thierry {
-    max-width: 32%;
+    max-width: 90%;
+    margin: auto;
 }
 
 
@@ -505,7 +507,7 @@ main .sectionSurvey {
         margin: auto;
         margin-bottom: 20px;
         border-right: none;
-        border-bottom: solid 3px #181820;
+    
     }
 
     .sectionQuemSomos .container .Pedro {
@@ -513,14 +515,14 @@ main .sectionSurvey {
         margin: auto;
         margin-bottom: 20px;
         border-right: none;
-        border-bottom: solid 3px #181820;
+        
     }
 
     .sectionQuemSomos .container .Thierry {
         max-width: 80%;
         margin: auto;
         border-right: none;
-        border-bottom: solid 3px #181820;
+        
     }
 
 }
@@ -564,13 +566,13 @@ main .sectionSurvey {
 }
 
 @media (max-width: 440px) {
+
     .imgLampadaCerebro {
         max-height: 360px;
     }
-    
 
-    .sectionQuemSomos {
-        background-color: aqua; 
+    .sectionSurvey p{
+        text-align: left;
     }
 
     .footer-pagamento img {
