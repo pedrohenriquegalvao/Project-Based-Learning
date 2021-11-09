@@ -6,38 +6,48 @@ function salvarRespostas() {
     divRespostas.innerHTML = '';
     usuario = [];
 
-    var nome = document.querySelector('input#nome').value;
-    usuario.push(nome);
-
-    var idade = document.querySelector('input#idade').value;
-    usuario.push(idade);
-
-    var hobby = document.querySelector('input#hobby').value;
-    usuario.push(hobby);
-
-    var formacao = document.querySelector('input#formacao').value;
-    usuario.push(formacao);
-
-    var comunicativa = document.querySelector('input#comunicativa').value;
-    usuario.push(comunicativa);
-
-    var tecnologia = document.querySelector('input#tecnologia').value;
-    usuario.push(tecnologia);
-
-    var cursos = document.querySelector('input#cursos').value;
-    usuario.push(cursos);
+    if (document.getElementById('nome').value =='' || document.getElementById('idade').value=='' ||
+    document.getElementById('hobby').value== ''||
+    document.getElementById('formacao').value==''||
+    document.getElementById('comunicativa').value==''||
+    document.getElementById('tecnologia').value==''||
+    document.getElementById('cursos').value=='') {
+        alert("[ERRO] Preencha todos os campos para enviar.")
+    } else {
+        var nome = document.querySelector('input#nome').value;
+        usuario.push(nome);
     
-    respostasUsuarios.push(usuario);
-    localStorage.setItem('respostasUsuarios', JSON.stringify(respostasUsuarios));
-
+        var idade = document.querySelector('input#idade').value;
+        usuario.push(idade);
     
-    document.getElementById('nome').value='';
-    document.getElementById('idade').value='';
-    document.getElementById('hobby').value='';
-    document.getElementById('formacao').value='';
-    document.getElementById('comunicativa').value='';
-    document.getElementById('tecnologia').value='';
-    document.getElementById('cursos').value='';
+        var hobby = document.querySelector('input#hobby').value;
+        usuario.push(hobby);
+    
+        var formacao = document.querySelector('input#formacao').value;
+        usuario.push(formacao);
+    
+        var comunicativa = document.querySelector('input#comunicativa').value;
+        usuario.push(comunicativa);
+    
+        var tecnologia = document.querySelector('input#tecnologia').value;
+        usuario.push(tecnologia);
+    
+        var cursos = document.querySelector('input#cursos').value;
+        usuario.push(cursos);
+        
+        respostasUsuarios.push(usuario);
+        localStorage.setItem('respostasUsuarios', JSON.stringify(respostasUsuarios));
+    
+        
+        document.getElementById('nome').value='';
+        document.getElementById('idade').value='';
+        document.getElementById('hobby').value='';
+        document.getElementById('formacao').value='';
+        document.getElementById('comunicativa').value='';
+        document.getElementById('tecnologia').value='';
+        document.getElementById('cursos').value='';
+    }
+    
 }
 
 function excluirUsuarios() {
