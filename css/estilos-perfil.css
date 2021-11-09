@@ -220,10 +220,18 @@ main .containerTopo {
     margin-bottom: 20px;
 }
 
-.divEditar p a{
+
+
+.divEditar p {
+    width: fit-content;
     color: #ffb612;
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+.divEditar p:hover {
+    cursor: pointer;
+    color: #b68920;
 }
 
 .container .divContainerCursos {

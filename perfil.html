@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos-perfil.css">
+    <script src="js/script-perfil.js"></script>
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/6f9e32056a.js" crossorigin="anonymous"></script>
     
@@ -73,17 +74,17 @@
                 
                 <div class="divCampos">
                     <p>Nome de Usuário</p>
-                    <input type="text" name="nome-usuario" id="nome-usuario" class="campos"><br>
+                    <input type="text" name="nome-usuario" id="nome-usuario" class="campos" disabled="true" value="Pedro Fusion"><br>
                     <p>Nome</p>
-                    <input type="text" name="nome" id="nome" class="campos"><br>
+                    <input type="text" name="nome" id="nome" class="campos" disabled="true" value="Pedro Henrique"><br>
                     <p>E-mail</p>
-                    <input type="email" name="email" id="email" class="campos"><br>
+                    <input type="email" name="email" id="email" class="campos" disabled="true" value="pedrocontato@hotmail.com"><br>
                     <p>Senha</p>
-                    <input type="password" name="senha" id="senha" class="campos" >
+                    <input type="password" name="senha" id="senha" class="campos" disabled="true" value="pedro123">
                 </div>
                 
                 <div class="divEditar">
-                    <p><a href="">Editar informações</a></p>   
+                    <p onclick="editar()">Editar informações</p>   
                 </div>
         
             </div>
