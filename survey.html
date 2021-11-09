@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Questionário</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+
+    <script src="js/script-survey.js"></script>
+
+    <link rel="stylesheet" href="css/estilos-survey.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+    <div class="container-survey">
+
+        <div class="div-titulo">
+            <h2>Questionário</h2>
+            <img src="./img/logo1.png">
+        </div>
+        
+        <form>
+
+            <p class="p-normal">Primeiramente, qual o seu nome?</p>
+            <input type="text" name="nome" id="nome" class="input-usuario">
+            <p class="p-active">Qual sua idade?</p>
+            <input type="text" name="idade" id="idade">
+            <p class="p-active">Qual seu hobby?</p>
+            <input type="text" name="hobby" id="hobby">
+            <p class="p-active">Qual a sua formação? (Ensino fundamental, médio, graduação ou pós-graduação)</p>
+            <input type="text" name="formacao" id="formacao">
+            <p class="p-active">Você se considera uma pessoa comunicativa?</p>
+            <input type="text" name="comunicativa" id="comunicativa"> 
+            <p class="p-active">Você costuma ter contato com tecnologia?</p>
+            <input type="text" name="tecnologia?" id="tecnologia">
+            <p class="p-active">Você já utilizou algum site de cursos online? (Sim/ Não)</p>
+            <input type="text" name="cursos" id="cursos">
+
+        </form>
+
+        <button onclick="salvarRespostas()" id="Enviar" class="button-enviar">Enviar</button>
+
+    </div>
+    <br>
+    <div class="container-buttons">
+        <button onclick="excluirUsuarios()" class="button-excluir">Excluir</button>
+        <button onclick="mostrarUsuarios()" class="button-mostrar">Mostrar</button>
+    </div>
+    
+
+    <div class="container-respostas">
+       
+    </div>
+</body>
+</html>
