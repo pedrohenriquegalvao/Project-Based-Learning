@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos-perfil.css">
+    <script src="js/script-perfil.js"></script>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6f9e32056a.js" crossorigin="anonymous"></script>
+    
+
+
+    <title>Perfil</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="/" ><img src="img/logo1.png" alt="" class="imgLogo1"></a></li>
+                <li>
+                    <div class="divSearch">
+                        <input type="text" name="" id="" class="inputSearch" size="30">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li><a href="/" class="options">Sobre</a></li>
+                <li><a href="/" class="options">Cursos</a></li>
+                <li><a href="/" class="options">Contato</a></li>
+                <li><a href="/" class="options">Entrar</a></li>
+                <li><button>MATRICULE-SE</button></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <div class="containerTopo">
+
+            <div class="divContainerUser">
+
+                <div class="divImg">
+                    <img src="img/fotoUsuario.png" alt="">
+                </div>
+    
+                <div class="divNome">
+                    <p>Perfil</p>
+                    <h1>NOME DO USUÁRIO</h1>
+                </div>
+    
+            </div>
+            
+            <div class="divContainerOptions">
+                <a href="">Notificações</a>
+                <a href="">Calendário</a>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="divContainerInfo">
+
+                <div class="divTitulo">
+                    <h1>Informações pessoais</h1>
+                </div>
+                
+                
+                <div class="divCampos">
+                    <p>Nome de Usuário</p>
+                    <input type="text" name="nome-usuario" id="nome-usuario" class="campos" disabled="true" value="Pedro Fusion"><br>
+                    <p>Nome</p>
+                    <input type="text" name="nome" id="nome" class="campos" disabled="true" value="Pedro Henrique"><br>
+                    <p>E-mail</p>
+                    <input type="email" name="email" id="email" class="campos" disabled="true" value="pedrocontato@hotmail.com"><br>
+                    <p>Senha</p>
+                    <input type="password" name="senha" id="senha" class="campos" disabled="true" value="pedro123">
+                </div>
+                
+                <div class="divEditar">
+                    <p onclick="editar()">Editar informações</p>   
+                </div>
+        
+            </div>
+        
+            <div class="divContainerCursos">
+        
+                <div class="divTitulo">
+                    <h1>Cursos</h1>
+                </div>
+                    
+                <div class="divProgressoes">
+                    <div>
+                        <p>Progressão no Curso X</p>
+                        <div class="divBarraProgressao"></div>
+                    </div>
+
+                    <div>
+                        <p>Progressão no Curso Y</p>
+                        <div class="divBarraProgressao"></div>
+                    </div>
+
+                    <div>
+                        <p>Progressão no Curso Z</p>
+                        <div class="divBarraProgressao"></div>
+                    </div>
+                </div>
+                    
+                <div class="divFinalizados">
+                    <h3>Cursos finalizados</h3>
+
+                    <ul class="listaCursos">
+                        <li>Curso A</li>
+                        <li>Curso B</li>
+                        <li>Curso C</li>
+                    </ul>
+
+                </div>
+        
+            </div>
+        
+            <div class="divContainerAssinatura">
+                
+                <div class="divTitulo">
+                    <h1>Assinatura</h1>
+                </div>
+                    
+                <p>Você não possui nenhuma assinatura no momento.</p>
+                
+                <div class="divButtons">
+                    <button>Cancelar Assinatura</button><br>
+                    <a href="#">Ir para a página de assinaturas</a>
+                </div>
+                
+            </div>
+
+
+        </div>
+    
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <h4>Assinaturas</h4>
+                    <ul>
+                        <li><a href="#">Mensal</a></li>
+                        <li><a href="#">Trimestral</a></li>
+                        <li><a href="#">Semestral</a></li>
+                        <li><a href="#">Anual</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="#">áreas de conhecimento</a></li>
+                        <li><a href="#">questionário survey</a></li>
+                        <li><a href="#">Fórum</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Grupo Debi</h4>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">fone: 3333-3333</a></li>
+                        <li><a href="#">Whatsapp: 99999-9999</a></li>
+                        <li><a href="#" class="emailDebi">Email: grupodebi@pjbl.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga nossas redes</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="footer-pagamento">
+                    <p>Formas de pagamento:</p>
+                    <div></div>
+                    <img alt="" src="img/pagamentos.webp">
+                </div>
+                
+        </div>
+        
+   </footer>
+
+</body>
+</html>
