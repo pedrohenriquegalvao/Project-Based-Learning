@@ -48,6 +48,11 @@ a {
     margin-top: 68px;
 }
 
+.menu li .fa-user-circle{
+    margin-top: 68px;
+    margin-left: 0;
+}
+
 .menu li button{
     background: none;
     border: solid 1px black;
