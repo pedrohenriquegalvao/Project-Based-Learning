@@ -490,8 +490,41 @@ main .sectionSurvey {
     width: 400px;
 }
 
-@media(max-width: 850px){
+@media(max-width: 1190px){
 
+    .menu li:nth-child(1){
+        grid-area: logo;
+        
+    }
+    .menu li:nth-child(2){
+        grid-area: pesquisa;
+    }
+
+    .menu li:nth-child(3){
+        grid-area: cursos;
+    }
+    .menu li:nth-child(4){
+        grid-area: contato;
+    }
+    .menu li:nth-child(5){
+        grid-area: entrar;
+    }
+    .menu li:nth-child(6){
+        grid-area: perfil;
+    }
+
+    .menu li:nth-child(7){
+        grid-area: matricule-se;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "logo logo pesquisa pesquisa pesquisa"
+                        "cursos contato entrar perfil matricule-se";
+        
+    }
 }
 
 @media (max-width: 823px) {
