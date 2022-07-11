@@ -289,6 +289,12 @@ nav {
     border: none;
     padding: 10px 30px 10px 30px;
     margin-top: 1em;
+    transition: 1s;
+}
+
+.container-introduction button:hover{
+    cursor: pointer;
+    background: #968507;
 }
 
 .envelope-introduction{
@@ -304,7 +310,7 @@ nav {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
-    height: 60vh;
+    height: 55vh;
 }
 
 .container-tree-items{
@@ -342,7 +348,214 @@ nav {
     font-size: 20px;
 }
 
+/* TERMINO DA SECTION */
+
+/* SECTION ASSINATURAS */
+
+.section-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.container-plan .title-plan{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.315em;
+}
+
+.container-plan h1{
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    margin: -40px 0px 60px 0px;
+}
+
+.envelope-plan{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.plan{
+    font-family: 'Poppins', sans-serif;
+    background-color: #5B3205;
+    width: 360px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.plan h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.check .item-check{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.check .item-check img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.plan button{
+    color: black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    background: #EBD100;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    width: 275px;
+    margin-top: 10em;
+    transition: 1s;
+}
+
+.plan button:hover{
+    cursor: pointer;
+    background-color: #968507;
+}
+
+.plan .type-plan{
+    margin: -10px 0px 50px 0px;
+}
+
+.plan .reg{
+    margin-top: 10px;
+}
+
+.plan .pro{
+    margin-top: 15px;
+}
+
+.plan .check-reg{
+    margin-top: -10px;
+}
+
+.plan .check-pro{
+    margin-top: -25px;
+}
+
+/* TERMINO DA SECTION */
+
+/* SECTIONS CREATOR */
+
+.creators{
+    background: linear-gradient(90deg, #3E1D0D 0%, #6B3E00 100%);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container-creator{
+    color: #fff;
+    width: 80%;
+}
+
+.container-creator .creator-title{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.235em;
+}
+
+.container-creator h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    margin-top: -20px;
+}
+
+.envelope-creator{
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+.imagem-creator{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imagem-creator .main-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.imagem-creator .info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.info .name h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.info .name p{
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFA800;
+}
+
+.socials img{
+    margin: 2px 0px 0px 0px;
+}
+
 /* RESPONSIVIDADE */
+
+@media (max-width: 1519px){
+    .section-plan{
+        height: 165vh;
+    }
+}
+
+@media (max-width: 1459px){
+    .tree-items{
+        height: 110vh;
+    }
+}
 
 @media (max-width: 1390px){
     .nav-list li {
@@ -413,6 +626,15 @@ nav {
     }
     .container-introduction h1{
         font-size: 55px;
+    }
+    .section-plan{
+        height: 230vh;
+    }
+}
+
+@media (max-width: 972px){
+    .tree-items{
+        height: 160vh;
     }
 }
 
