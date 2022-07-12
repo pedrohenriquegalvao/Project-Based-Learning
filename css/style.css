@@ -474,23 +474,25 @@ nav {
 
 .creators{
     background: linear-gradient(90deg, #3E1D0D 0%, #6B3E00 100%);
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
 }
 
 .container-creator{
     color: #fff;
-    width: 80%;
+    width: 70%;
+    margin-top: 15vh;
 }
 
 .container-creator .creator-title{
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     letter-spacing: 0.235em;
+    margin-left: 3px;
 }
 
 .container-creator h1{
@@ -503,13 +505,14 @@ nav {
 
 .envelope-creator{
     display: flex;
-    /*justify-content: space-around;*/
+    margin-top: 30px;
 }
 
 .imagem-creator{
     display: flex;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    margin-right: 19vw;
 }
 
 .imagem-creator .main-img{
