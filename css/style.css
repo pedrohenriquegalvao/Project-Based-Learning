@@ -645,11 +645,46 @@ nav {
     .envelope-introduction{
         width: 90%;
     }
+
+    .envelope-creator{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .creators{
+        height: 90vh;
+    }
+}
+
+@media (max-width: 801px){
+    .creators{
+        height: 90vh;
+    }
+
+    .container-creator .creator-title{
+        font-size: 16px;
+    }
+
+    .container-creator h1{
+        font-size: 50px;
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 660px){
     .search-bar{
         display: none;
+    }
+}
+
+@media (max-width: 608px){
+    .container-plan h1{
+        font-size: 70px;
+        margin: -20px 0px 60px 0px;
+    }
+    .container-plan .title-plan{
+        font-size: 20px;
+        
     }
 }
 
@@ -668,4 +703,30 @@ nav {
         margin-top: 1.5em;
     }
     
+    .creators{
+        height: 100vh;
+    }
+
+    .container-creator h1{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 470px){
+    .envelope-plan{
+        width: 95%;
+    }
+    .container-plan h1{
+        font-size: 50px;
+    }
+
+    .container-creator h1{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 350px){
+    .container-creator h1{
+        font-size: 20px;
+    }
 }
