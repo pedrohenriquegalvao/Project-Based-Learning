@@ -22,6 +22,7 @@ header{
     top: 0;
     width: 100%;
     position: absolute;
+    
 }
 
 .background img{
@@ -30,6 +31,8 @@ header{
     height: 100vh;
     z-index: -999;
     position: absolute;
+    -webkit-animation: introLoad 1s forwards;
+    animation: introLoad 1s forwards;
 }
 
 /* NAV-BAR */
@@ -300,26 +303,30 @@ nav {
 .envelope-introduction{
     width: 50%;
     color: #fff;
+    -webkit-animation: moveDown 1s ease-in-out forwards;
+    animation: moveDown 1s ease-in-out forwards;
+    opacity: 0;
 }
 
 /* TERMINO DA SECTION */
 
-/* SECTION TREE ITEMS */
+/* SECTION ThREE ITEMS */
 
-.tree-items{
+.three-items{
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     height: 55vh;
+    opacity: 1;
 }
 
-.container-tree-items{
+.container-three-items{
     display: flex;
     justify-content: center;
     width: 72%;
 }
 
-.envelope-tree-items{
+.envelope-three-items{
     display: flex;
     justify-content: space-around;
     width: 100vw;
@@ -555,7 +562,7 @@ nav {
 }
 
 @media (max-width: 1459px){
-    .tree-items{
+    .three-items{
         height: 110vh;
     }
 }
@@ -636,7 +643,7 @@ nav {
 }
 
 @media (max-width: 972px){
-    .tree-items{
+    .three-items{
         height: 160vh;
     }
 }
@@ -730,3 +737,45 @@ nav {
         font-size: 20px;
     }
 }
+
+/* key frames */
+
+@-webkit-keyframes moveDown {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes moveDown {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes introLoad {
+    from {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  @keyframes introLoad {
+    from {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }

@@ -7,7 +7,8 @@
     <title>Omnia Scire</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/qbj7kce.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   </head>
 
   <body>
@@ -49,9 +50,9 @@
         </div>
       </section>
 
-      <section class="tree-items">
-        <div class="container-tree-items">
-          <div class="envelope-tree-items">
+      <section class="three-items">
+        <div class="container-three-items">
+          <div class="envelope-three-items">
             <div class="item">
               <img src="img/aprimorar-icon.png">
               <h1>Aprimore sua carreira</h1>
@@ -175,5 +176,32 @@
     </main>
 
     <script src="js/navbar.js"></script>
+    <script>
+      /*gsap.from('.item', {
+        scrollTrigger: {
+          trigger:'.item',
+          start: "center bottom"
+        },
+        y: -100,
+        opacity: 0
+      });*/
+
+      gsap.from('.item', {scrollTrigger: {
+          trigger:'.item',
+          start: "center bottom"},
+          y: -150, 
+          stagger: 0.2, 
+          opacity: 0,
+          duration: 0.7});
+
+      gsap.from('.plan', {scrollTrigger:{
+        trigger: '.item',
+        start: "center bottom"
+      },
+      x: 100,
+      stagger: 0.2,
+      opacity: 0,
+      duration: 1})
+    </script>
   </body>
 </html>
