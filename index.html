@@ -1,184 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    
-    <link rel="stylesheet" href="css/estilos-home-page.css">
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/6f9e32056a.js" crossorigin="anonymous"></script>
-
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Omnia Scire</title>
-</head>
-<body>
-    <header>   
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html"><img src="img/logo1.png" alt="" class="imgLogo1"></a></li>
-                <li>
-                    <div class="divSearch">
-                        <input type="text" name="" id="" class="inputSearch" size="30">
-                        <i class="fas fa-search"></i>
-                    </div>
-                </li>
-                <li><a href="paginas/cursos.html" class="options">Cursos</a></li>
-                <li><a href="#contato" class="options">Contato</a></li>
-                <li><a href="paginas/login.html" class="options entrar">Entrar</a></li>
-                <li><a href="paginas/perfil.html"><i class="fas fa-user-circle"></i></a></li>
-                <li><button onclick="location.href='paginas/cadastro.html'">MATRICULE-SE</button></li>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/qbj7kce.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  </head>
 
-            </ul>
-        </nav>
-
-        <section class="sectionConteudoHeader">
-            <div class="container">
-                <h1>BEM-VINDO!</h1>
-                <p>Nosso site foi criado com o objetivo de receber pessoas que têm sede por conhecimeto e desejam sempre evoluir e expandir seus aprendizados.</p>
-            </div>
-            <img src="img/lampadaCerebro.png" alt="" class="imgLampadaCerebro">
-        </section>
-        
+  <body>
+    <header>
+      <nav>
+        <img class="logo-nav" src="img/logoOmniaScire.png">
+        <div class="search-bar">
+            <form class="form-search" id="searchFormHeader" autocomplete="off" method="get" action="/busca">
+                <button class="button-search greenBack" type="button" id="btn-busca"> buscar <img class="search-icon" src="img/search-black.svg" width="18" height="18"> </button>
+                <input type="text" class="input-search ac_input" id="txtBuscaPrincipal" itemprop="query-input" name="busca" data-placeholder="Pesquise aqui..." autocomplete="off" placeholder="Pesquise aqui...">
+            </form>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Cadastre-se</a></li>
+          <li><a href="#">Entre</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     </header>
-    
+
+    <div class="background">
+        <img src="img/lamp-background.png">
+    </div>
+
     <main>
-        <section class="sectionMain1">
-            <h1>É A SUA PRIMEIRA VEZ EM NOSSO SITE?</h1>
-            <div class="divFirstBox">
-                <p>Para ter uma experiência completa pelo site, clique no botão Entrar na parte superior do site.</p>
+      <section class="introduction">
+        <div class="container-introduction">
+          <div class="envelope-introduction">
+            <h1>Plataforma de ensino, com cursos online.</h1>
+            <p>Venha conhecer nossa plataforma de ensino, e acelere seu conhecimento.</p>
+            <button>Matricule-se</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="three-items">
+        <div class="container-three-items">
+          <div class="envelope-three-items">
+            <div class="item">
+              <img src="img/aprimorar-icon.png">
+              <h1>Aprimore sua carreira</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="divCursos">
-                <h3>Aqui, você terá acesso a cursos: </h3><br>
-                <ul>
-                    <li>Na área da tecnologia (nosso foco)</li>
-                    <li>De idiomas</li>
-                    <li>De matérias do ensino fundamental e médio</li>
-                    <li>Pré-vestibular</li>
-                    <li></li>
-                </ul> 
+            <div class="item">
+              <img src="img/globe-icon.png">
+              <h1>Assista a aulas de qualquer lugar</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <section class="sectionSurvey">
-                <div>
-                    <h2>COM DÚVIDAS SOBRE O QUE CURSAR?</h2>
-                    <p>
-                        Realize nosso questionário<br><strong>SURVEY!</strong>
-                        <button class="buttonSurvey" onclick="location.href='paginas/survey.html'">Clique aqui</button>
-                    </p>
+            <div class="item">
+              <img src="img/clock-icon.png">
+              <h1>Aprendizagem acelerada</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section-plan">
+        <div class="container-plan">
+          <p class="title-plan">Planos de</p>
+          <h1>Assinatura</h1>
+          <div class="envelope-plan">
+            <div class="plan">
+              <h2>Simples</h2>
+              <img class="type-plan" src="img/simples-plan.png">
+              <div class="check">
+                <div class="item-check">
+                  <img src="img/check-able.png">
+                  <p>Acesso aos cursos da plataforma</p>
                 </div>
-            </section>
-            <div class="divAssinaturas">
-
-                <div class="divContainer">
-                    <h3>ASSINATURAS:</h3>
-                    <ul>
-                        <li>Mensais</li>
-                        <li>Trimestrais</li>
-                        <li>Semestrais</li>
-                        <li>Anuais</li>
-                    </ul>
+                <div class="item-check">
+                  <img src="img/check-disable.png">
+                  <p>Acesso ao fórum tira duvidas</p>
                 </div>
-
-                <div class="acessarAssinatura">
-                    <p>Clique <a href="paginas/assinatura.html">aqui</a> para acessar a página de assinaturas.</p>
+                <div class="item-check">
+                  <img src="img/check-disable.png">
+                  <p>Cursos extras de lingua estrangeira</p>
                 </div>
-
+              </div>
+              <button>Matricule-se</button>
             </div>
-
-
-            <div class="divForum">
-                <h2>Também temos um fórum!</h2>
-                <p>Fique por dentro do que está rolando no site e lançamentos.</p>
-                <button onclick="location.href='paginas/forum.html'">Quero conhecer o fórum</button>
+            <div class="plan">
+              <h2>Regular</h2>
+              <img class="type-plan reg" src="img/regular-plan.png">
+              <div class="check check-reg">
+                <div class="item-check">
+                  <img src="img/check-able.png">
+                  <p>Acesso aos cursos da plataforma</p>
+                </div>
+                <div class="item-check">
+                  <img src="img/check-able.png">
+                  <p>Acesso ao fórum tira duvidas</p>
+                </div>
+                <div class="item-check">
+                  <img src="img/check-disable.png">
+                  <p>Cursos extras de lingua estrangeira</p>
+                </div>
+              </div>
+              <button class="btn-reg">Matricule-se</button>
             </div>
+            <div class="plan">
+              <h2>Profissional</h2>
+              <img class="type-plan pro" src="img/profissional-plan.png">
+              <div class="check check-pro">
+                <div class="item-check">
+                  <img src="img/check-able.png">
+                  <p>Acesso aos cursos da plataforma</p>
+                </div>
+                <div class="item-check">
+                  <img src="img/check-able.png">
+                  <p>Acesso ao fórum tira duvidas</p>
+                </div>
+                <div class="item-check">
+                  <img src="img/check-able.png">
+                  <p>Cursos extras de lingua estrangeira</p>
+                </div>
+              </div>
+              <button class="btn-pro">Matricule-se</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            
-        </section>        
-
+      <section class="creators">
+        <div class="container-creator">
+          <p class="creator-title">Conheça os criadores</p>
+          <h1>Desenvolvedores do Omnia Scire</h1>
+          <div class="envelope-creator">
+            <div class="imagem-creator">
+              <img class="main-img" src="img/leonardo.jpg">
+              <div class="info">
+                <div class="name">
+                  <h1>Leonardo Alves</h1>
+                  <p>Front-End Developer</p>
+                </div>
+                <div class="socials">
+                  <a href="https://github.com/alvessleo"><img src="img/git.png" alt="git-image"></a>
+                  <a href="https://www.linkedin.com/in/leonardo-fernandes-alves-1391b2213/"><img src="img/linkedin.png" alt="linkedin-image"></a>
+                </div>
+              </div>
+            </div>
+            <div class="imagem-creator">
+              <img class="main-img" src="img/pedro.jfif">
+              <div class="info">
+                <div class="name">
+                  <h1>Pedro Henrique</h1>
+                  <p>Fullstack Developer</p>
+                </div>
+                <div class="socials">
+                  <a href="https://github.com/pedrohenriquegalvao"><img src="img/git.png" alt="git-image"></a>
+                  <a href="https://www.linkedin.com/in/pedro-henrique-galvao/"><img src="img/linkedin.png" alt="linkedin-image"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-        
-    <section class="sectionQuemSomos" id="quem-somos">
-        <div class="geral">
-            <h2>QUEM SOMOS?</h2>
-            <h3>
-                Plataforma de ensino Omnia Scire.
-            </h3>
-        </div>
-        <div class="container">
 
-            <div class="Leo">
-                <h3>Leo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur quasi nostrum amet veritatis magni nihil nulla saepe unde iusto aspernatur vero nesciunt nobis minus, blanditiis, ratione vitae, et consectetur!</p>
-            </div>
+    <script src="js/navbar.js"></script>
+    <script>
+      /*gsap.from('.item', {
+        scrollTrigger: {
+          trigger:'.item',
+          start: "center bottom"
+        },
+        y: -100,
+        opacity: 0
+      });*/
 
-            <div class="Pedro">
-                <h3>Pedro</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur quasi nostrum amet veritatis magni nihil nulla saepe unde iusto aspernatur vero nesciunt nobis minus, blanditiis, ratione vitae, et consectetur!</p>
-            </div>
+      gsap.from('.item', {scrollTrigger: {
+          trigger:'.item',
+          start: "center bottom"},
+          y: -150, 
+          stagger: 0.2, 
+          opacity: 0,
+          duration: 0.7});
 
-            <div class="Thierry">
-                <h3>Thierry</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur quasi nostrum amet veritatis magni nihil nulla saepe unde iusto aspernatur vero nesciunt nobis minus, blanditiis, ratione vitae, et consectetur!</p>
-            </div>
-
-    
-
-        </div>
-    </section>
-    
-   
-
-    <footer class="footer" id="contato">
-        <div class="container">
-            <div class="row">
-
-                <div class="footer-col">
-                    <h4>Assinaturas</h4>
-                    <ul>
-                        <li><a href="paginas/assinatura.html">Mensal</a></li>
-                        <li><a href="paginas/assinatura.html">Trimestral</a></li>
-                        <li><a href="paginas/assinatura.html">Semestral</a></li>
-                        <li><a href="paginas/assinatura.html">Anual</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Cursos</h4>
-                    <ul>
-                        <li><a href="paginas/cursos.html">áreas de conhecimento</a></li>
-                        <li><a href="paginas/survey.html">questionário survey</a></li>
-                        <li><a href="paginas/forum.html">Fórum</a></li>
-            
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Grupo Debi</h4>
-                    <ul>
-                        <li><a href="#quem-somos">Sobre</a></li>
-                        <li><a href="#">fone: 3333-3333</a></li>
-                        <li><a href="#">Whatsapp: 99999-9999</a></li>
-                        <li><a href="#" class="emailDebi">Email: grupodebi@pjbl.com</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Siga nossas redes</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-                <div class="footer-pagamento">
-                    <p>Formas de pagamento:</p>
-                    <div></div>
-                    <img alt="" src="img/pagamentos.webp">
-                </div>
-                
-        </div>
-        
-   </footer>
-</body>
+      gsap.from('.plan', {scrollTrigger:{
+        trigger: '.item',
+        start: "center bottom"
+      },
+      x: 100,
+      stagger: 0.2,
+      opacity: 0,
+      duration: 1})
+    </script>
+  </body>
 </html>
